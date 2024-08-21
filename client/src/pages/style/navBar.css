@@ -1,0 +1,87 @@
+/* BuyerNavbar.css */
+
+/* General Navbar Styling */
+.main-content { /* Replace with your actual content container class */
+    margin-bottom: 70px; /* Adjust this value to match your navbar height + desired spacing */
+  }
+.navbar {
+    background-color: #343a40;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px; /* Changed margin-bottom to 50px */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0; /* Set top to 0 */
+    width: 100%; /* Make it full width */
+    z-index: 100; /* Ensure it stays on top */
+  }
+  
+  /* Navbar Brand Styling */
+  .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #ced4da;
+  }
+  
+  /* Navbar Link Styling */
+  .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ced4da;
+    transform: translateY(-2px);
+  }
+  
+  /* Navbar Toggler Styling */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Collapse Navbar for Mobile View */
+  .collapse.navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  /* Navbar Links Active State */
+  .nav-link.active {
+    color: #ffc107;
+  }
+  
+  /* Button Hover Effect */
+  .nav-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+      margin-right: 15px;
+    }
+  
+    .nav-item {
+      margin-right: 10px;
+    }
+  }

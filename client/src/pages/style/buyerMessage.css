@@ -1,0 +1,93 @@
+/* General styles for the message board */
+.message-board {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the table */
+  .message-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .message-list th, .message-list td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .message-list th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .message-list td {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Hover effects for table rows */
+  .message-list tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Styles for table header */
+  .message-list thead tr {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .message-list th, .message-list td {
+    text-align: center;
+  }
+  
+  /* Button styles */
+  .message-list td button {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .message-list td button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .message-board {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .message-list th, .message-list td {
+      padding: 10px;
+    }
+  }
+  
+  /* Add more spacing and a polished look to the table cells */
+  .message-list th, .message-list td {
+    padding: 15px 20px;
+  }
+  
+  .message-list tbody tr:last-child td {
+    border-bottom: none;
+  }
